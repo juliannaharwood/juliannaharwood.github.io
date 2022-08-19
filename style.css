@@ -8,12 +8,16 @@
   margin: 25px;
   font-size: 20px;
   font-weight: 900;
+  text-decoration: underline;
 }
 
-#buttons {
+/* #buttons {
   margin-left: 50px;
-}
+} */
 
+#welcome {
+  margin-right: 40px;
+}
 
 html,
 body {
@@ -23,17 +27,22 @@ body {
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  font-family: "Roboto Mono", monospace;
+  font-family: "Roboto Mono", monospace; 
+  display : flex;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
   /* background-color: rgb(236, 232, 105); */
 }
 
 h1 {
+    margin-right: 20px;
     margin-top: 50px;
     font-size: 24px;
   }
 
 p {
-    color: rgb(9, 66, 135);
+    color: rgb(25, 57, 97);
     margin-left: 40px;
 }
 
@@ -43,9 +52,28 @@ a {
   display:inline-block;
 }
 
+a:link { text-decoration: none;
+  color: rgb(25, 57, 97); }
+
+
+a:visited { text-decoration: none;
+  color: rgb(25, 57, 97); }
+
+
+a:hover { text-decoration: none;
+  color: rgb(25, 57, 97); }
+
+
+a:active { text-decoration: none;
+  color: rgb(25, 57, 97); }
+
 button {
     margin: 25px;
     font-family: inherit;
+    display : flex;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
   }
   /* End of Page styling */
 
@@ -64,7 +92,7 @@ button {
 
 .fill::after {
   content: "";
-  background-color: #66f2d5;
+  background-color: #96ee96;
   width: 100%;
   z-index: -1;
   position: absolute;
@@ -113,7 +141,7 @@ button {
 
 .slide::after {
   content: "";
-  background-color: #66f2d5;
+  background-color: #e9e263;
   width: 100%;
   z-index: -1;
   position: absolute;
