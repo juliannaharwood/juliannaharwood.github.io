@@ -46,6 +46,11 @@
         <div id="code-modal" class="modal">
             <div class="modal__content">
                 
+                <button id="delta_method" type="button" class="slide">
+                    <div>AB Testing with the Delta Method for Relative Difference</div>
+                    <i class="icon-arrow-right"></i>
+                </button>
+
                 <button id="box_office" type="button" class="slide">
                     <div>Predicting Box Office Revenue</div>
                     <i class="icon-arrow-right"></i>
@@ -84,6 +89,9 @@
 
         <!-- Adding our JavaScript in the script tag -->
         <script>
+            document.getElementById("delta_mthod").onclick = function () {
+                location.href = "content/code/delta_method.html";
+            };
 
             document.getElementById("box_office").onclick = function () {
                 location.href = "content/code/box_office_revenue_prediction.html";
