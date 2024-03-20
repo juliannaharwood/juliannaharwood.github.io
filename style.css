@@ -107,7 +107,7 @@ button {
 
 .fill::after {
   content: "";
-  background-color: #96ee96;
+  background-color: #dd83e7;
   width: 100%;
   z-index: -1;
   position: absolute;
