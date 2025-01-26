@@ -48,6 +48,11 @@
         
         <div id="code-modal" class="modal">
             <div class="modal__content">
+
+                <button id="calibrator" type="button" class="slide">
+                    <div>Classifier Calibration with Plat Scaling</div>
+                    <i class="icon-arrow-right"></i>
+                </button>
                 
                 <button id="delta_method" type="button" class="slide">
                     <div>AB Testing with the Delta Method for Relative Difference</div>
@@ -95,8 +100,13 @@
             </div>
         </div>
 
-        <!-- Adding our JavaScript in the script tag -->
+        <!-- Javascript for button clicks -->
         <script>
+            document.getElementById("calibrator").onclick = function () {
+                window.open("content/code/calibrator_demo.html", "_blank");
+                // location.href = "content/code/delta_method.html";
+            };
+
             document.getElementById("delta_method").onclick = function () {
                 window.open("content/code/delta_method.html", "_blank");
                 // location.href = "content/code/delta_method.html";
@@ -113,7 +123,7 @@
             };
 
             document.getElementById("cars").onclick = function () {
-                window.open("content/code/cars.html", "_blank");
+                window.open("content/code/tensorflow_image_recognition_demo.html", "_blank");
                 // location.href = "content/code/cars.html";
             };
 
