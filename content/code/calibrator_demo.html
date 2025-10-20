@@ -7524,6 +7524,9 @@ a.anchor-link {
 <p>Typically these plots are built with bucketing, so all observations in a given bucket on the x-axis are used to calculate the proportion of the positive class to be plotted on the y-axis, e.g. all observations in a bucket centered around 0.3, should have 30% positive labels.</p>
 <p>You can see below how uncalibrated classifiers might fall above and below this perfect calibration line, meaning their predicted probabilities are wrong.</p>
 <p><img alt="No description has been provided for this image" height="700" src="calibration_plots.png"/></p>
+<div style="font-size: 0.9em; color: #555; margin-top: 4px; margin-bottom: 16px; text-align: center;">
+  Scikit-learn: Machine Learning in Python, Pedregosa et al., JMLR 12, pp. 2825-2830, 2011.
+</div>
 <p>We can also get a numerical measure of calibration with the Brier Score:</p>
 <p>$$\text{Brier Score} = \frac{1}{N} \sum_{i=1}^N (p_i - y_i)^2$$</p>
 <p>Where</p>

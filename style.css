@@ -1,19 +1,36 @@
+/* format button text links */
+#code_button.fill {
+  color: #fff !important;
+  padding-top: 19px;
+  font-weight: 500;
+}
+
+#no_code_button.fill {
+  color: #fff !important;
+  padding-top: 19px;
+  font-weight: 500;
+}
+
+#pickle.fill {
+  color: #fff !important;
+  padding-top: 19px;
+  font-weight: 500;
+}
+
 #comic {
   width: 170px;
   height: auto;
-  margin: 50px;
+  margin: 5px;
 }
 
 #resume {
   margin: 25px;
   font-size: 15px;
-  font-weight: 900;
   text-decoration: underline;
 }
 
 #linkedin {
   margin: 25px;
-  font-weight: 900;
   font-size: 15px;
   text-decoration: underline;
 }
@@ -42,22 +59,24 @@ body {
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  font-family: "Roboto Mono", monospace; 
+  font-family: 'Avenir Next Regular', 'Avenir Next', 'Avenir', Arial, sans-serif;
   display : flex;
   justify-content: center !important;
   align-items: center !important;
   text-align: center !important;
-  /* background-color: rgb(236, 232, 105); */
+  font-weight: 500;
 }
 
 h1 {
     margin-right: 20px;
     margin-top: 50px;
     font-size: 24px;
+    color: #4043ff;
+    font-weight: 500;
   }
 
 p {
-    color: rgb(25, 57, 97);
+    color: #4043ff;
     margin-left: 40px;
 }
 
@@ -68,19 +87,19 @@ a {
 }
 
 a:link { text-decoration: none;
-  color: rgb(25, 57, 97); }
+  color: #4043ff; }
 
 
 a:visited { text-decoration: none;
-  color: rgb(25, 57, 97); }
+  color: #4043ff; }
 
 
 a:hover { text-decoration: none;
-  color: rgb(25, 57, 97); }
+  color: #4043ff; }
 
 
 a:active { text-decoration: none;
-  color: rgb(25, 57, 97); }
+  color: #4043ff; }
 
 button {
     margin: 25px;
@@ -88,14 +107,14 @@ button {
     display : flex;
     justify-content: center !important;
     align-items: center !important;
-    text-align: center !important;
+      text-align: right !important;
+    color: #4043ff;
   }
   /* End of Page styling */
 
   /* Fill button styling */
 .fill {
   font-size: 20px;
-  font-weight: 200;
   letter-spacing: 1px;
   padding: 13px 50px 13px;
   outline: 0;
@@ -103,11 +122,12 @@ button {
   cursor: pointer;
   position: relative;
   background-color: rgba(0, 0, 0, 0);
+  color: #fff;
 }
 
 .fill::after {
   content: "";
-  background-color: #dd83e7;
+  background-color: #4043ff;
   width: 100%;
   z-index: -1;
   position: absolute;
@@ -126,14 +146,13 @@ button {
 /* Slide button styling */
 .slide {
   font-size: 20px;
-  font-weight: 200;
   letter-spacing: 1px;
   padding: 13px 30px 13px;
   outline: 0;
   border: 1px solid black;
   cursor: pointer;
   position: relative;
-  background-color: #b9eebb;
+  background-color: #fbfbfb;
 }
 
 .slide i {
@@ -156,7 +175,7 @@ button {
 
 .slide::after {
   content: "";
-  background-color: #e9e263;
+  background-color: #787880;
   width: 100%;
   z-index: -1;
   position: absolute;
@@ -171,7 +190,7 @@ button {
 }
 /* End of Slide Button  */
 
-
+/* Modal */
 .modal {
   visibility: hidden;
   opacity: 0;
@@ -211,18 +230,17 @@ button {
   width: 500px;
   /* height: 100px; */
   max-width: 90%;
-  background: #f1de74;
+  background: #4043ff;
   padding: 1em 2em;
 }
-
 
 .modal__close {
   position: absolute;
   top: 10px;
   right: 10px;
-  color: #585858;
+  color: #fff !important;
   text-decoration: none;
 }
-
+/* End of Modal */
 
 
